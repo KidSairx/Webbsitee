@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-color: rgb(37, 37, 37);
+    overflow: visible;
+    cursor: default;
+}
+
+
+button {
+    all: unset;
+    /* Resets all inherited and default properties */
+    display: inline-block;
+    /* Restores block-like behavior */
+    cursor: pointer;
+    /* Adds pointer cursor for usability */
+    text-align: center;
+    font-family: monospace;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+a {
+    all: unset;
+}
+
+header {
+    width: auto;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.DropDownLanguageMenu {
+    margin-left: clamp(0px, 2vw, 85px);
+    font-size: clamp(10px, 1vw, 16px);
+}
+
+.DropDownLanguageMenu button {
+    background-color: transparent;
+    width: calc(4vw + 55px);
+    height: clamp(25px, 2.5vw, 35px);
+    border-radius: 10px;
+    color: whitesmoke;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+#CurrentLanguage {
+    color: rgb(220, 20, 60);
+}
+
+.DropDownLanguageMenu button:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+.DropDownLanguageMenu button:active {
+    transition-duration: 0.1s;
+    background-color: rgb(55, 55, 55)
+}
+
+.LogoText {
+    color: white;
+    margin-left: auto;
+    display: inline-block;
+    font-size: clamp(25px, 5vw, 45px);
+    font-family: Georgia, serif;
+    font-weight: 500;
+}
+
+.SignInButton {
+    background-color: white;
+    margin-left: auto;
+    margin-right: 5vw;
+    width: calc(5vw + 35px);
+    height: 35px;
+    font-size: 1rem;
+}
