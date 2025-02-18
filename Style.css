@@ -86,6 +86,7 @@ header {
 .MainPageHolder {
     height: infinite;
     margin: 15px;
+    margin-bottom: 0px;
     background-color: rgb(16, 16, 16);
     /* bg temporary, later probably invisible*/
 }
