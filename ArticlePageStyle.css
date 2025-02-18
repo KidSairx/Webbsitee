@@ -1,0 +1,39 @@
+.ArticleHeadContainer {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NewsTitle {
+    color: aliceblue;
+    font-size: 2vw;
+    font-family: "Kumar One", serif;
+    font-weight: 600;
+    background-color: rgb(25, 25, 25);
+    margin-top: 1vw;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+.NewsArticleImage {
+    display: flex;
+    height: 30vw;
+    border-radius: 2px;
+    margin-top: 1vw;
+    object-fit: cover;
+}
+
+.NewsDescription {
+    display: flex;
+    background-color: transparent;
+    color: rgb(210, 210, 210);
+    font-size: 1vw;
+    word-break: normal;
+    line-height: 1;
+    font-family: monospace;
+    font-weight: 100;
+}
