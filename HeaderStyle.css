@@ -35,12 +35,12 @@ header {
     z-index: 100;
 }
 
-.DropDownLanguageMenu {
+.LanguageMenu {
     margin-left: clamp(0px, 2vw, 85px);
     font-size: clamp(10px, 1vw, 16px);
 }
 
-.DropDownLanguageMenu button {
+.LanguageMenu button {
     background-color: transparent;
     width: calc(4vw + 55px);
     height: clamp(25px, 2.5vw, 35px);
@@ -52,15 +52,11 @@ header {
     transition-timing-function: ease-out;
 }
 
-#CurrentLanguage {
-    color: rgb(220, 20, 60);
-}
-
-.DropDownLanguageMenu button:hover {
+.LanguageMenu button:hover {
     background-color: rgb(95, 95, 95);
 }
 
-.DropDownLanguageMenu button:active {
+.LanguageMenu button:active {
     transition-duration: 0.1s;
     background-color: rgb(55, 55, 55)
 }
