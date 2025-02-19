@@ -1,3 +1,36 @@
+h1 {
+    all: unset;
+    color: aliceblue;
+    font-size: 2vw;
+    font-family: "Kumar One", serif;
+    font-weight: 600;
+}
+
+h2 {
+    all: unset;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Kumar One", serif;
+    font-weight: 400;
+    margin-top: 1vw;
+}
+
+h3 {
+    all: unset;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Kumar One", serif;
+    font-weight: 300;
+}
+
+h4 {
+    all: unset;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Kumar One", serif;
+    font-weight: 200;
+}
+
 .ArticleHeadContainer {
     background-color: rgb(44, 44, 44);
     display: flex;
@@ -6,10 +39,6 @@
 }
 
 .NewsTitle {
-    color: aliceblue;
-    font-size: 2vw;
-    font-family: "Kumar One", serif;
-    font-weight: 600;
     background-color: rgb(25, 25, 25);
     margin-top: 1vw;
     justify-content: center;
@@ -30,7 +59,7 @@
     display: block;
     background-color: transparent;
     color: rgb(210, 210, 210);
-    font-size: 1.5vw;
+    font-size: clamp(10px, 1.5vw, 40px);
     word-break: normal;
     line-height: 1;
     font-family: monospace;
@@ -38,4 +67,29 @@
     text-align: center;
     padding-left: 15vw;
     padding-right: 15vw;
+}
+
+.ArticleTable {
+    background-color: transparent;
+    height: infinite;
+    width: 45vw;
+    margin-left: 20vw;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ArticleText {
+    font-size: 20px;
+    font-family: "Kumar One", serif;
+    color: rgb(255, 255, 255);
+    word-break: normal;
+    overflow: hidden;
+    padding: 0.5vw;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    font-family: normal;
+    font-weight: 200;
+    margin: 0;
 }
