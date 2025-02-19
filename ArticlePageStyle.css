@@ -27,12 +27,15 @@
 }
 
 .NewsDescription {
-    display: flex;
+    display: block;
     background-color: transparent;
     color: rgb(210, 210, 210);
-    font-size: 1vw;
+    font-size: 1.5vw;
     word-break: normal;
     line-height: 1;
     font-family: monospace;
     font-weight: 100;
+    text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }

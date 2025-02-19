@@ -70,6 +70,10 @@ header {
     font-weight: 500;
 }
 
+#LogoTextHyperLink:hover {
+    cursor: pointer;
+}
+
 #SignInButton {
     background-color: white;
     margin-left: auto;
