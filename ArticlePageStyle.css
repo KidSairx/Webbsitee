@@ -1,34 +1,18 @@
 h1 {
     all: unset;
     color: aliceblue;
-    font-size: 2vw;
-    font-family: "Kumar One", serif;
+    font-size: clamp(25px, 2vw, 100px);
+    font-family: monospace;
     font-weight: 600;
 }
 
 h2 {
     all: unset;
     color: aliceblue;
-    font-size: 20px;
+    font-size: clamp(20px, 1.7vw, 100px);
     font-family: "Kumar One", serif;
     font-weight: 400;
     margin-top: 1vw;
-}
-
-h3 {
-    all: unset;
-    color: aliceblue;
-    font-size: 20px;
-    font-family: "Kumar One", serif;
-    font-weight: 300;
-}
-
-h4 {
-    all: unset;
-    color: aliceblue;
-    font-size: 20px;
-    font-family: "Kumar One", serif;
-    font-weight: 200;
 }
 
 .ArticleHeadContainer {
@@ -44,11 +28,12 @@ h4 {
     justify-content: center;
     width: 100%;
     text-align: center;
+    padding: 0.2vw;
 }
 
 .NewsArticleImage {
     display: block;
-    height: 20vw;
+    height: clamp(100px, 20vw, 1000px);
     width: 40vw;
     border-radius: 2px;
     margin-top: 1vw;
@@ -59,12 +44,12 @@ h4 {
     display: block;
     background-color: transparent;
     color: rgb(210, 210, 210);
-    font-size: clamp(10px, 1.5vw, 40px);
+    font-size: clamp(20px, 1.5vw, 100px);
     word-break: normal;
-    line-height: 1;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
     font-family: monospace;
     font-weight: 100;
-    text-align: center;
     padding-left: 15vw;
     padding-right: 15vw;
 }
@@ -81,7 +66,7 @@ h4 {
 }
 
 .ArticleText {
-    font-size: 20px;
+    font-size: clamp(15px, 1.5vw, 100px);
     font-family: "Kumar One", serif;
     color: rgb(255, 255, 255);
     word-break: normal;
