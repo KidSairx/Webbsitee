@@ -1,0 +1,33 @@
+{
+    "@context": "https://schema.org",
+    "@type": "SatiricalArticle",
+    "@id": "LATERurl",
+    "headline": "Fourth Article",
+    "description": "Fourth description",
+    "author": {
+        "@type": "Person",
+        "name": "Sairx"
+    },
+    "DatePublished": "2025-02-22",
+    "DateModified": "2025-02-22",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Gen Z Informant"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "null"
+    },
+    "image": [
+        "https://yourwebsite.com/image1.jpg",
+        "https://yourwebsite.com/image2.jpg",
+        "https://yourwebsite.com/image3.jpg"
+    ],
+    "ArticleBody": [
+        "4",
+        "4",
+        "4"
+    ],
+    "CustomArticleId": "68",
+    "CustomArticleCategory": "Anime And Manga"
+}
