@@ -54,6 +54,11 @@ h2 {
     padding-right: 15vw;
 }
 
+.ArticleMainBody {
+    background-color: transparent;
+    position: relative;
+}
+
 .ArticleTable {
     background-color: transparent;
     height: infinite;
@@ -99,4 +104,191 @@ h2 {
 
 #BackToMainPageButton:active {
     background-color: rgb(27, 27, 27);
+}
+
+.TrendingListTable {
+    margin-left: 70%;
+    margin-top: 5%;
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5%;
+    display: inline-block;
+    width: 25vw;
+    height: 25vw;
+    padding-bottom: 0.5vw;
+}
+
+#TrendingNowText {
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: "Kumar One", serif;
+    margin-bottom: 0.2vw;
+    font-size: 1vw;
+}
+
+.TrendingNewsContainer {
+    display: block;
+    position: relative;
+    background-color: rgb(37, 37, 37);
+    margin: 4px;
+    margin-left: 2%;
+    width: 96%;
+    height: 27%;
+    border-radius: 4px;
+}
+
+.TrendingNewsArticleImage {
+    display: inline-block;
+    margin-left: 1.2vw;
+    object-fit: cover;
+    width: 45%;
+    height: 4.8vw;
+    margin-top: 0.6vw;
+    border-radius: 0.8px;
+}
+
+.TrendingNewsArticleImage:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+    transition-duration: 0.1s;
+}
+
+.TrendingNewsTitle {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 10.5vw;
+    height: 4.8vw;
+    color: aliceblue;
+    top: 5%;
+    left: 55%;
+    font-size: 1vw;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 0.2vw;
+    line-height: 1;
+    font-family: "Kumar One", serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.TrendingNewsTitle:hover {
+    text-decoration: underline;
+}
+
+.TrendingNewsTitle:active {
+    color: rgb(220, 20, 60);
+}
+
+.TrendingNewsCategoryType {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 50%;
+    height: 0.6vw;
+    color: aliceblue;
+    top: 68%;
+    left: 5%;
+    font-size: 0.8vw;
+    word-break: normal;
+    overflow: hidden;
+    padding: 0.2vw;
+    line-height: 1;
+    font-family: "Kumar One", serif;
+    font-weight: 100;
+}
+
+
+.NextArticleListTable {
+    margin-left: 70%;
+    margin-top: -5%;
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5%;
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    padding-bottom: 0.5vw;
+}
+
+#NextArticleListText {
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: "Kumar One", serif;
+    margin-bottom: 0.2vw;
+    font-size: 1vw;
+}
+
+.NextArticleNewsContainer {
+    display: block;
+    position: relative;
+    background-color: rgb(37, 37, 37);
+    margin: 4px;
+    margin-left: 2%;
+    width: 96%;
+    height: 70%;
+    border-radius: 4px;
+}
+
+.NextArticleNewsImage {
+    display: inline-block;
+    margin-left: 1.2vw;
+    object-fit: cover;
+    width: 45%;
+    height: 4.8vw;
+    margin-top: 0.6vw;
+    border-radius: 0.8px;
+}
+
+.NextArticleNewsImage:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+    transition-duration: 0.1s;
+}
+
+.NextArticleNewsTitle {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 10.5vw;
+    height: 4.8vw;
+    color: aliceblue;
+    top: 5%;
+    left: 55%;
+    font-size: 1vw;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 0.2vw;
+    line-height: 1;
+    font-family: "Kumar One", serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.NextArticleNewsTitle:hover {
+    text-decoration: underline;
+}
+
+.NextArticleNewsTitle:active {
+    color: rgb(220, 20, 60);
+}
+
+.NextArticleNewsCategoryType {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 50%;
+    height: 0.6vw;
+    color: aliceblue;
+    top: 68%;
+    left: 5%;
+    font-size: 0.8vw;
+    word-break: normal;
+    overflow: hidden;
+    padding: 0.2vw;
+    line-height: 1;
+    font-family: "Kumar One", serif;
+    font-weight: 100;
 }
