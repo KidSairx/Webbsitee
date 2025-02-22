@@ -78,3 +78,25 @@ h2 {
     font-weight: 200;
     margin: 0;
 }
+
+
+#BackToMainPageButton {
+    display: inline-block;
+    background-color: rgb(25, 25, 25);
+    margin: calc(1vw + 5px);
+    padding: 0.5vw;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    border-radius: 1vw;
+    transition: background-color 0.3s;
+    font-family: "Kumar One", serif;
+}
+
+#BackToMainPageButton:hover {
+    background-color: rgb(112, 112, 112);
+    cursor: pointer;
+}
+
+#BackToMainPageButton:active {
+    background-color: rgb(27, 27, 27);
+}
