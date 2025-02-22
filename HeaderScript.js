@@ -37,7 +37,7 @@ var ArticleIdText = document.getElementById("ArticleIdText");
 var AllCategoryButton = document.getElementById("AllCategoryButton");
 var GamingCategoryButton = document.getElementById("GamingCategoryButton");
 var SocialMediaCategoryButton = document.getElementById("SocialMediaCategoryButton");
-var ArtificialIntelligenceCategoryButton = document.getElementById("ArtificialIntelligenceCategoryButton");
+var TechnologyCategoryButton = document.getElementById("TechnologyCategoryButton");
 var WorldCategoryButton = document.getElementById("WorldCategoryButton");
 var AnimeAndMangaCategoryButton = document.getElementById("AnimeAndMangaCategoryButton");
 
@@ -50,7 +50,7 @@ function LanguageChange() {
         AllCategoryButton.innerHTML = "| All categories |";
         GamingCategoryButton.innerHTML = "| Gaming |";
         SocialMediaCategoryButton.innerHTML = "| Social Media |";
-        ArtificialIntelligenceCategoryButton.innerHTML = "| Artificial Intelligence |";
+        TechnologyCategoryButton.innerHTML = "| Technology |";
         WorldCategoryButton.innerHTML = "| World |";
         AnimeAndMangaCategoryButton.innerHTML = "|Anime and Manga |";
 
@@ -70,7 +70,7 @@ function LanguageChange() {
         AllCategoryButton.innerHTML = "| Todas las Categorias |";
         GamingCategoryButton.innerHTML = "| Gaming |";
         SocialMediaCategoryButton.innerHTML = "| Redes Sociales |";
-        ArtificialIntelligenceCategoryButton.innerHTML = "| Inteligencia Artificial |";
+        TechnologyCategoryButton.innerHTML = "| Technología |";
         WorldCategoryButton.innerHTML = "| Mundo |";
         AnimeAndMangaCategoryButton.innerHTML = "| Anime y Manga |";
 
