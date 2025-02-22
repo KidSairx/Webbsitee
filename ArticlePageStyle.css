@@ -118,6 +118,7 @@ h2 {
 
 .ArticleInfo p {
     display: inline-block;
+    margin: 0;
     margin-left: 3px;
 }
 

@@ -31,7 +31,8 @@ var BackToMainPageButton = document.getElementById("BackToMainPageButton");
 var TrendingNowText = document.getElementById("TrendingNowText");
 var NextArticleText = document.getElementById("NextArticleText");
 var ArticleAuthorText = document.getElementById("ArticleAuthorText");
-var ArticleDateText = document.getElementById("ArticleDateText");
+var ArticlePublishedDateText = document.getElementById("ArticlePublishedDateText");
+var ArticleLastModifiedDateText = document.getElementById("ArticleLastModifiedDateText");
 var ArticleIdText = document.getElementById("ArticleIdText");
 function LanguageChange() {
     let Language = localStorage.getItem("Language");
@@ -43,7 +44,8 @@ function LanguageChange() {
         TrendingNowText.innerHTML = "Trending Now";
         NextArticleText.innerHTML = "Next Article";
         ArticleAuthorText.innerHTML = "Author: ";
-        ArticleDateText.innerHTML = "Date: ";
+        ArticlePublishedDateText.innerHTML = "Publication Date: ";
+        ArticleLastModifiedDateText.innerHTML = "Last Modified Date: ";
         ArticleIdText.innerHTML = "Article ID: ";
     } else if (Language === "Spanish") {
         SignInButton.innerHTML = "Iniciar Sesión";
@@ -53,7 +55,8 @@ function LanguageChange() {
         TrendingNowText.innerHTML = "Tendencia Ahora";
         NextArticleText.innerHTML = "Siguiente Artículo";
         ArticleAuthorText.innerHTML = "Autor/a: ";
-        ArticleDateText.innerHTML = "Fecha: ";
+        ArticlePublishedDateText.innerHTML = "Fecha de Publicación: ";
+        ArticleLastModifiedDateText.innerHTML = "Fecha de Última Modificación: ";
         ArticleIdText.innerHTML = "ID del Artículo: ";
     }
 };
