@@ -25,8 +25,8 @@ SpanishLanguageButton.addEventListener("click", function () {
 });
 
 var SignInButton = document.getElementById("SignInButton");
-var SignInButton = document.getElementById("FooterLicense");
-var SignInButton = document.getElementById("FooterContactUs");
+var FooterLicense = document.getElementById("FooterLicense");
+var FooterContactUs = document.getElementById("FooterContactUs");
 var BackToMainPageButton = document.getElementById("BackToMainPageButton");
 function LanguageChange() {
     let Language = localStorage.getItem("Language");
