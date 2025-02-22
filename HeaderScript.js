@@ -25,7 +25,7 @@ SpanishLanguageButton.addEventListener("click", function () {
 });
 
 var SignInButton = document.getElementById("SignInButton");
-var FooterLicense = document.getElementById("FooterLicense");
+var FooterInfo = document.getElementById("FooterInfo");
 var FooterContactUs = document.getElementById("FooterContactUs");
 var BackToMainPageButton = document.getElementById("BackToMainPageButton");
 var TrendingNowText = document.getElementById("TrendingNowText");
@@ -38,7 +38,7 @@ function LanguageChange() {
     let Language = localStorage.getItem("Language");
     if (Language === "English") {
         SignInButton.innerHTML = "Sign In";
-        FooterLicense.innerHTML = `This web page(everything except images) is licensed under a <br> <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank"> Creative Commons Attribution - NoDerivatives 4.0 International License</a>`;
+        FooterInfo.innerHTML = "This web page is a satirical news article and is not meant to be taken seriously";
         FooterContactUs.innerHTML = `Contact us at <a href="mailto:ischevych@gmail.com">ouremail@mail.com</a>`;
         BackToMainPageButton.innerHTML = "Go Back to main page";
         TrendingNowText.innerHTML = "Trending Now";
@@ -49,7 +49,7 @@ function LanguageChange() {
         ArticleIdText.innerHTML = "Article ID: ";
     } else if (Language === "Spanish") {
         SignInButton.innerHTML = "Iniciar Sesión";
-        FooterLicense.innerHTML = `Esta página web(todo excepto imagenes) está licensiada bajo <br> <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank"> Licencia Creative Commons Atribución-SinDerivadas 4.0 Internacional</a>`;
+        FooterInfo.innerHTML = "Esta página web es un artículo de noticias satíricas y no debe tomarse en serio";
         FooterContactUs.innerHTML = `Contacta con nosotros en <a href="mailto:ischevych@gmail.com">ouremail@mail.com</a>`;
         BackToMainPageButton.innerHTML = "Volver a la página principal";
         TrendingNowText.innerHTML = "Tendencia Ahora";
