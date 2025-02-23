@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Set inner HTML for article
                 articleElement.innerHTML = `
                     <div class="NewsArticleContainer">
-                        <a href="ArticlePage.html">
+                        <a href="ArticlePage.html?id=${article.CustomArticleId}">
                             <img src="${articleImage}" alt="News Article Image" class="NewsArticleImage">
                         </a>
-                        <a href="ArticlePage.html" class="NewsTitle">${article.headline}</a>
+                        <a href="ArticlePage.html?id=${article.CustomArticleId}" class="NewsTitle">${article.headline}</a>
                         <p class="NewsDescription">${article.description}</p>
                         <p class="NewsCategoryType">${article.CustomArticleCategory}</p>
                     </div>
