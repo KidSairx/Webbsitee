@@ -13,21 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (article) {
                     // Display the article data
                     document.querySelector(".NewsTitleText").textContent = article.headline;
+                    document.querySelector("#NewsArticleMainImage").scr = article.image[0];
                     document.querySelector(".NewsDescriptionText").textContent = article.description;
-                    document.querySelector(".ArticleText").innerHTML = article.ArticleBody.join("<br><br>");
-                    document.querySelector(".ArticleAuthor").textContent = `Author: ${article.author.name}`;
-                    document.querySelector(".ArticlePublishedDate").textContent = `Date Published: ${article.DatePublished}`;
-                    document.querySelector(".ArticleLastModifiedDate").textContent = `Date Modified: ${article.DateModified}`;
-                    document.querySelector(".ArticleId").textContent = `Article ID: ${article.CustomArticleId}`;
+                    document.querySelector("#ArticleHeadline1").innerHTML = article.ArticleHeadline[0];
+                    document.querySelector("#NewsArticleImage1").scr = article.image[1];
+                    document.querySelector("#ArticleText1").innerHTML = article.ArticleBody[0];
+                    document.querySelector("#ArticleHeadline2").innerHTML = article.ArticleHeadline[1];
+                    document.querySelector("#NewsArticleImage2").scr = article.image[2];
+                    document.querySelector("#ArticleText2").innerHTML = article.ArticleBody[1];
+                    document.querySelector("#ArticleHeadline3").innerHTML = article.ArticleHeadline[2];
+                    document.querySelector("#NewsArticleImage3").scr = article.image[3];
+                    document.querySelector("#ArticleText3").innerHTML = article.ArticleBody[2];
+                    document.querySelector("#ArticleAuthor").textContent = `Author: ${article.author.name}`;
+                    document.querySelector("#ArticlePublishedDate").textContent = `Date Published: ${article.DatePublished}`;
+                    document.querySelector("#ArticleLastModifiedDate").textContent = `Date Modified: ${article.DateModified}`;
+                    document.querySelector("#ArticleId").textContent = `Article ID: ${article.CustomArticleId}`;
 
-                    // Display the images
-                    const imageContainer = document.querySelector(".NewsArticleImages");
-                    article.image.forEach(imagePath => {
-                        const img = document.createElement("img");
-                        img.src = imagePath;
-                        img.alt = article.headline;
-                        imageContainer.appendChild(img);
-                    });
+
                 } else {
                     console.error("Article not found");
                 }

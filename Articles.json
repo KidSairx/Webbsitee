@@ -25,6 +25,11 @@
             "images/art1.3.jpg",
             "images/art1.4.jpg"
         ],
+        "ArticleHeadline": [
+            "Trump all over the world",
+            "",
+            "Ending headiline"
+        ],
         "ArticleBody": [
             "The news about Trump renaming the gulf of Mexico flew all over the world recently but now Trump is preparing another executive order where he claims to be renaming it once again",
             "The gulf of Trump will be the new name of the gulf of Mexico. Trump claims that this will be a great way to honor himself and his family. He also claims that this will be a great way to show the world that he is the best president ever.",
@@ -58,6 +63,11 @@
             "null",
             "null",
             "null"
+        ],
+        "ArticleHeadline": [
+            "",
+            "",
+            ""
         ],
         "ArticleBody": [
             "2",
@@ -93,6 +103,11 @@
             "null",
             "null"
         ],
+        "ArticleHeadline": [
+            "",
+            "",
+            ""
+        ],
         "ArticleBody": [
             "3",
             "3",
@@ -126,6 +141,11 @@
             "null",
             "null",
             "null"
+        ],
+        "ArticleHeadline": [
+            "",
+            "",
+            ""
         ],
         "ArticleBody": [
             "4",
@@ -161,6 +181,11 @@
             "null",
             "null"
         ],
+        "ArticleHeadline": [
+            "",
+            "",
+            ""
+        ],
         "ArticleBody": [
             "5",
             "5",
@@ -194,6 +219,11 @@
             "null",
             "null",
             "null"
+        ],
+        "ArticleHeadline": [
+            "",
+            "",
+            ""
         ],
         "ArticleBody": [
             "6",
