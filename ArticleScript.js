@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 articleElement.classList.add("NewsContainer");
                 articleElement.dataset.category = article.CustomArticleCategory; // Set category for filtering
 
-                // Get the first image from the array (if available)
-                const articleImage = article.image && article.image.length > 0 ? article.image[0] : "images/Placeholder.png";
+
+                const articleImage = article.image[0] ? article.image[0] : "images/Placeholder.png";
 
                 // Set inner HTML for article
                 articleElement.innerHTML = `
