@@ -47,43 +47,49 @@ function LanguageChange() {
         SignInButton.innerHTML = "Sign In";
         FooterInfo.innerHTML = "This web page is a satirical news article and is not meant to be taken seriously";
         FooterContactUs.innerHTML = `Contact us at <a href="mailto:ischevych@gmail.com">ouremail@mail.com</a>`;
+
         if (AllCategoryButton) {
-        AllCategoryButton.innerHTML = "| All categories |";
-        GamingCategoryButton.innerHTML = "| Gaming |";
-        SocialMediaCategoryButton.innerHTML = "| Social Media |";
-        TechnologyCategoryButton.innerHTML = "| Technology |";
-        WorldCategoryButton.innerHTML = "| World |";
-        AnimeAndMangaCategoryButton.innerHTML = "|Anime and Manga |";
+            AllCategoryButton.innerHTML = "| All categories |";
+            GamingCategoryButton.innerHTML = "| Gaming |";
+            SocialMediaCategoryButton.innerHTML = "| Social Media |";
+            TechnologyCategoryButton.innerHTML = "| Technology |";
+            WorldCategoryButton.innerHTML = "| World |";
+            AnimeAndMangaCategoryButton.innerHTML = "|Anime and Manga |";
         }
-        
+
         if (BackToMainPageButton) {
-        BackToMainPageButton.innerHTML = "Go Back to main page";
-        TrendingNowText.innerHTML = "Trending Now";
-        NextArticleText.innerHTML = "Next Article";
-        ArticleAuthorText.innerHTML = "Author: ";
-        ArticlePublishedDateText.innerHTML = "Publication Date: ";
-        ArticleLastModifiedDateText.innerHTML = "Last Modified Date: ";
-        ArticleIdText.innerHTML = "Article ID: ";
+            BackToMainPageButton.innerHTML = "Go Back to main page";
+            TrendingNowText.innerHTML = "Trending Now";
+            NextArticleText.innerHTML = "Next Article";
+            ArticleAuthorText.innerHTML = "Author: ";
+            ArticlePublishedDateText.innerHTML = "Publication Date: ";
+            ArticleLastModifiedDateText.innerHTML = "Last Modified Date: ";
+            ArticleIdText.innerHTML = "Article ID: ";
         }
 
     } else if (Language === "Spanish") {
         SignInButton.innerHTML = "Iniciar Sesión";
         FooterInfo.innerHTML = "Esta página web es un artículo de noticias satíricas y no debe tomarse en serio";
         FooterContactUs.innerHTML = `Contacta con nosotros en <a href="mailto:ischevych@gmail.com">ouremail@mail.com</a>`;
-        AllCategoryButton.innerHTML = "| Todas las Categorias |";
-        GamingCategoryButton.innerHTML = "| Gaming |";
-        SocialMediaCategoryButton.innerHTML = "| Redes Sociales |";
-        TechnologyCategoryButton.innerHTML = "| Technología |";
-        WorldCategoryButton.innerHTML = "| Mundo |";
-        AnimeAndMangaCategoryButton.innerHTML = "| Anime y Manga |";
 
-        //ERROR FIX LATER MAYBE
-        BackToMainPageButton.innerHTML = "Volver a la página principal";
-        TrendingNowText.innerHTML = "Tendencia Ahora";
-        NextArticleText.innerHTML = "Siguiente Artículo";
-        ArticleAuthorText.innerHTML = "Autor/a: ";
-        ArticlePublishedDateText.innerHTML = "Fecha de Publicación: ";
-        ArticleLastModifiedDateText.innerHTML = "Fecha de Última Modificación: ";
-        ArticleIdText.innerHTML = "ID del Artículo: ";
+        if (AllCategoryButton) {
+            AllCategoryButton.innerHTML = "| Todas las Categorias |";
+            GamingCategoryButton.innerHTML = "| Gaming |";
+            SocialMediaCategoryButton.innerHTML = "| Redes Sociales |";
+            TechnologyCategoryButton.innerHTML = "| Technología |";
+            WorldCategoryButton.innerHTML = "| Mundo |";
+            AnimeAndMangaCategoryButton.innerHTML = "| Anime y Manga |";
+        }
+
+        if (BackToMainPageButton) {
+            BackToMainPageButton.innerHTML = "Volver a la página principal";
+            TrendingNowText.innerHTML = "Tendencia Ahora";
+            NextArticleText.innerHTML = "Siguiente Artículo";
+            ArticleAuthorText.innerHTML = "Autor/a: ";
+            ArticlePublishedDateText.innerHTML = "Fecha de Publicación: ";
+            ArticleLastModifiedDateText.innerHTML = "Fecha de Última Modificación: ";
+            ArticleIdText.innerHTML = "ID del Artículo: ";
+        }
+
     }
 };
