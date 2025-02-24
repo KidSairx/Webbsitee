@@ -47,14 +47,16 @@ function LanguageChange() {
         SignInButton.innerHTML = "Sign In";
         FooterInfo.innerHTML = "This web page is a satirical news article and is not meant to be taken seriously";
         FooterContactUs.innerHTML = `Contact us at <a href="mailto:ischevych@gmail.com">ouremail@mail.com</a>`;
+        if (AllCategoryButton) {
         AllCategoryButton.innerHTML = "| All categories |";
         GamingCategoryButton.innerHTML = "| Gaming |";
         SocialMediaCategoryButton.innerHTML = "| Social Media |";
         TechnologyCategoryButton.innerHTML = "| Technology |";
         WorldCategoryButton.innerHTML = "| World |";
         AnimeAndMangaCategoryButton.innerHTML = "|Anime and Manga |";
-
-        //ERROR FIX LATER MAYBE
+        }
+        
+        if (BackToMainPageButton) {
         BackToMainPageButton.innerHTML = "Go Back to main page";
         TrendingNowText.innerHTML = "Trending Now";
         NextArticleText.innerHTML = "Next Article";
@@ -62,6 +64,7 @@ function LanguageChange() {
         ArticlePublishedDateText.innerHTML = "Publication Date: ";
         ArticleLastModifiedDateText.innerHTML = "Last Modified Date: ";
         ArticleIdText.innerHTML = "Article ID: ";
+        }
 
     } else if (Language === "Spanish") {
         SignInButton.innerHTML = "Iniciar Sesión";
