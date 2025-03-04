@@ -11,10 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const article = data.find(article => article.CustomArticleId === articleId);
 
                 if (article) {
-                    // Display the article data
-                    document.querySelector(".NewsTitleText").textContent = article.headline;
+                    document.querySelector("#NewsTitleText").textContent = article.headline;
                     document.querySelector("#NewsArticleMainImage").src = article.image[0];
-                    document.querySelector(".NewsDescriptionText").textContent = article.description;
+                    document.querySelector("#NewsDescriptionText").textContent = article.description;
                     document.querySelector("#ArticleHeadline1").innerHTML = article.ArticleHeadline[0];
                     document.querySelector("#NewsArticleImage1").src = article.image[1];
                     document.querySelector("#ArticleText1").innerHTML = article.ArticleBody[0];
@@ -28,6 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.querySelector("#ArticlePublishedDate").textContent = article.DatePublished;
                     document.querySelector("#ArticleLastModifiedDate").textContent = article.DateModified;
                     document.querySelector("#ArticleId").textContent = article.CustomArticleId;
+
+                    //hide images if they are not provided
+                    if (article.image[1] === "") {
+                        document.querySelector("#NewsArticleImage1").style.display = "none";
+                    }
+                    if (article.image[2] === "") {
+                        document.querySelector("#NewsArticleImage2").style.display = "none";
+                    }
+                    if (article.image[3] === "") {
+                        document.querySelector("#NewsArticleImage3").style.display = "none";
+                    }
 
 
                 } else {

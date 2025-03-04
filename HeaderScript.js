@@ -91,12 +91,12 @@ function LanguageChange() {
                     if (currentArticle) {
                         NewsTitleText.innerHTML = currentArticle.headline;
                         NewsDescriptionText.innerHTML = currentArticle.description;
-                        ArticleHeadline1.innerHTML = currentArticle.ArticleHeadline[1];
-                        ArticleHeadline2.innerHTML = currentArticle.ArticleHeadline[2];
-                        ArticleHeadline3.innerHTML = currentArticle.ArticleHeadline[3];
-                        ArticleText1.innerHTML = currentArticle.ArticleBody[1];
-                        ArticleText2.innerHTML = currentArticle.ArticleBody[2];
-                        ArticleText3.innerHTML = currentArticle.ArticleBody[3];
+                        ArticleHeadline1.innerHTML = currentArticle.ArticleHeadline[0];
+                        ArticleHeadline2.innerHTML = currentArticle.ArticleHeadline[1];
+                        ArticleHeadline3.innerHTML = currentArticle.ArticleHeadline[2];
+                        ArticleText1.innerHTML = currentArticle.ArticleBody[0];
+                        ArticleText2.innerHTML = currentArticle.ArticleBody[1];
+                        ArticleText3.innerHTML = currentArticle.ArticleBody[2];
                     } else {
                         console.error("Article not found");
                     }
@@ -130,10 +130,10 @@ function LanguageChange() {
             fetch("Articles.json")
                 .then(response => {
                     if (response.ok) {
-                        console.log("Language changed to English on Article Successfully");
+                        console.log("Language changed to Spanish on Article Successfully");
                         return response.json(); // Return the parsed JSON data
                     } else {
-                        console.log("ERROR while changing Language to English");
+                        console.log("ERROR while changing Language to Spanish");
                         throw new Error("Failed to fetch Articles.json");
                     }
                 })
@@ -144,12 +144,12 @@ function LanguageChange() {
                     if (currentArticle) {
                         NewsTitleText.innerHTML = currentArticle.headlineSpanish;
                         NewsDescriptionText.innerHTML = currentArticle.descriptionSpanish;
-                        ArticleHeadline1.innerHTML = currentArticle.ArticleHeadlineSpanish[1];
-                        ArticleHeadline2.innerHTML = currentArticle.ArticleHeadlineSpanish[2];
-                        ArticleHeadline3.innerHTML = currentArticle.ArticleHeadlineSpanish[3];
-                        ArticleText1.innerHTML = currentArticle.ArticleBodySpanish[1];
-                        ArticleText2.innerHTML = currentArticle.ArticleBodySpanish[2];
-                        ArticleText3.innerHTML = currentArticle.ArticleBodySpanish[3];
+                        ArticleHeadline1.innerHTML = currentArticle.ArticleHeadlineSpanish[0];
+                        ArticleHeadline2.innerHTML = currentArticle.ArticleHeadlineSpanish[1];
+                        ArticleHeadline3.innerHTML = currentArticle.ArticleHeadlineSpanish[2];
+                        ArticleText1.innerHTML = currentArticle.ArticleBodySpanish[0];
+                        ArticleText2.innerHTML = currentArticle.ArticleBodySpanish[1];
+                        ArticleText3.innerHTML = currentArticle.ArticleBodySpanish[2];
                     } else {
                         console.error("Article not found");
                     }

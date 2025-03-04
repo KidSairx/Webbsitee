@@ -40,7 +40,7 @@ h2 {
     object-fit: cover;
 }
 
-.NewsDescriptionText {
+#NewsDescriptionText {
     display: block;
     background-color: transparent;
     color: rgb(210, 210, 210);
@@ -107,6 +107,7 @@ h2 {
 }
 
 .ArticleInfo {
+    margin-top: 5%;
     background-color: transparent;
     width: 100%;
     display: flex;
