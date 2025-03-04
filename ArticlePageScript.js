@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.querySelector("#ArticleHeadline3").innerHTML = article.ArticleHeadline[2];
                     document.querySelector("#NewsArticleImage3").src = article.image[3];
                     document.querySelector("#ArticleText3").innerHTML = article.ArticleBody[2];
-                    document.querySelector("#ArticleAuthor").textContent = `Author: ${article.author.name}`;
-                    document.querySelector("#ArticlePublishedDate").textContent = `Date Published: ${article.DatePublished}`;
-                    document.querySelector("#ArticleLastModifiedDate").textContent = `Date Modified: ${article.DateModified}`;
-                    document.querySelector("#ArticleId").textContent = `Article ID: ${article.CustomArticleId}`;
+                    document.querySelector("#ArticleAuthor").textContent = article.author.name;
+                    document.querySelector("#ArticlePublishedDate").textContent = article.DatePublished;
+                    document.querySelector("#ArticleLastModifiedDate").textContent = article.DateModified;
+                    document.querySelector("#ArticleId").textContent = article.CustomArticleId;
 
 
                 } else {
