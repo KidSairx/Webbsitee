@@ -34,12 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 newsContainer.appendChild(articleElement);
             });
 
-            var categoryButtons = document.querySelectorAll(".CategoriesButton");
-            var newsContainers = document.querySelectorAll(".NewsContainer");
+            let categoryButtons = document.querySelectorAll(".CategoriesButton");
+            let newsContainers = document.querySelectorAll(".NewsContainer");
 
             categoryButtons.forEach(function (button) {
                 button.addEventListener("click", function () {
-                    var category = button.getAttribute("id").replace("CategoryButton", "");
+                    let category = button.getAttribute("id").replace("CategoryButton", "");
+
+                    categoryButtons.forEach(button => button.style.color = "white"); // Reset all buttons
+                    button.style.color = "rgb(220, 20, 60)"; // Highlight the clicked button
                     filterNews(category);
                 });
             });
@@ -60,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Set "All" as default display
             filterNews("All");
+            document.querySelector("#AllCategoryButton").style.color = "rgb(220, 20, 60)";
 
         })
         .catch(error => console.error("Error loading articles:", error));

@@ -1,5 +1,5 @@
-var EnglishLanguageButton = document.getElementById("EnglishLanguageButton");
-var SpanishLanguageButton = document.getElementById("SpanishLanguageButton");
+let EnglishLanguageButton = document.getElementById("EnglishLanguageButton");
+let SpanishLanguageButton = document.getElementById("SpanishLanguageButton");
 
 function SetLanguage(Language) {
     localStorage.setItem("Language", Language);
@@ -24,30 +24,30 @@ SpanishLanguageButton.addEventListener("click", function () {
     LanguageChange()
 });
 
-var SignInButton = document.getElementById("SignInButton");
-var FooterInfo = document.getElementById("FooterInfo");
-var FooterContactUs = document.getElementById("FooterContactUs");
-var BackToMainPageButton = document.getElementById("BackToMainPageButton");
-var TrendingNowText = document.getElementById("TrendingNowText");
-var NextArticleText = document.getElementById("NextArticleText");
-var ArticleAuthorText = document.getElementById("ArticleAuthorText");
-var ArticlePublishedDateText = document.getElementById("ArticlePublishedDateText");
-var ArticleLastModifiedDateText = document.getElementById("ArticleLastModifiedDateText");
-var ArticleIdText = document.getElementById("ArticleIdText");
-var AllCategoryButton = document.getElementById("AllCategoryButton");
-var GamingCategoryButton = document.getElementById("GamingCategoryButton");
-var SocialMediaCategoryButton = document.getElementById("SocialMediaCategoryButton");
-var TechnologyCategoryButton = document.getElementById("TechnologyCategoryButton");
-var WorldCategoryButton = document.getElementById("WorldCategoryButton");
-var AnimeAndMangaCategoryButton = document.getElementById("AnimeAndMangaCategoryButton");
-var NewsTitleText = document.getElementById("NewsTitleText");
-var NewsDescriptionText = document.getElementById("NewsDescriptionText");
-var ArticleHeadline1 = document.getElementById("ArticleHeadline1");
-var ArticleHeadline2 = document.getElementById("ArticleHeadline2");
-var ArticleHeadline3 = document.getElementById("ArticleHeadline3");
-var ArticleText1 = document.getElementById("ArticleText1");
-var ArticleText2 = document.getElementById("ArticleText2");
-var ArticleText3 = document.getElementById("ArticleText3");
+let SignInButton = document.getElementById("SignInButton");
+let FooterInfo = document.getElementById("FooterInfo");
+let FooterContactUs = document.getElementById("FooterContactUs");
+let BackToMainPageButton = document.getElementById("BackToMainPageButton");
+let TrendingNowText = document.getElementById("TrendingNowText");
+let NextArticleText = document.getElementById("NextArticleText");
+let ArticleAuthorText = document.getElementById("ArticleAuthorText");
+let ArticlePublishedDateText = document.getElementById("ArticlePublishedDateText");
+let ArticleLastModifiedDateText = document.getElementById("ArticleLastModifiedDateText");
+let ArticleIdText = document.getElementById("ArticleIdText");
+let AllCategoryButton = document.getElementById("AllCategoryButton");
+let GamingCategoryButton = document.getElementById("GamingCategoryButton");
+let SocialMediaCategoryButton = document.getElementById("Social MediaCategoryButton");
+let TechnologyCategoryButton = document.getElementById("TechnologyCategoryButton");
+let WorldCategoryButton = document.getElementById("WorldCategoryButton");
+let AnimeAndMangaCategoryButton = document.getElementById("Anime And MangaCategoryButton");
+let NewsTitleText = document.getElementById("NewsTitleText");
+let NewsDescriptionText = document.getElementById("NewsDescriptionText");
+let ArticleHeadline1 = document.getElementById("ArticleHeadline1");
+let ArticleHeadline2 = document.getElementById("ArticleHeadline2");
+let ArticleHeadline3 = document.getElementById("ArticleHeadline3");
+let ArticleText1 = document.getElementById("ArticleText1");
+let ArticleText2 = document.getElementById("ArticleText2");
+let ArticleText3 = document.getElementById("ArticleText3");
 
 function LanguageChange() {
     let Language = localStorage.getItem("Language");

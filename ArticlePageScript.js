@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.querySelector("#ArticlePublishedDate").textContent = article.DatePublished;
                     document.querySelector("#ArticleLastModifiedDate").textContent = article.DateModified;
                     document.querySelector("#ArticleId").textContent = article.CustomArticleId;
+                    document.title = article.headline;
 
                     //hide images if they are not provided
                     if (article.image[1] === "") {

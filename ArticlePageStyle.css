@@ -309,3 +309,29 @@ h2 {
     font-family: "Kumar One", serif;
     font-weight: 100;
 }
+
+
+
+.ArticleInputForAdmins {
+    display: block;
+    background-color: rgb(44, 44, 44);
+    width: 95%;
+    max-height: 20vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1vw;
+    border-radius: 1vw;
+    color: white;
+}
+
+#AdminCheatSheat {
+    background-color: lightblue;
+    color: red;
+    font-size: 200%;
+    border: 3px solid red;
+}
+
+#AdminCheatSheat button {
+    padding: 1%;
+    border: 2px solid red;
+}
