@@ -5,24 +5,23 @@ function SetLanguage(Language) {
     localStorage.setItem("Language", Language);
 }
 
-// Set "English" as default language
-SetLanguage("English");
-EnglishLanguageButton.style.color = "rgb(220, 20, 60)";
-SpanishLanguageButton.style.color = "white";
-
-EnglishLanguageButton.addEventListener("click", function () {
+function EnglishLanguageChange() {
     SetLanguage("English");
     EnglishLanguageButton.style.color = "rgb(220, 20, 60)";
     SpanishLanguageButton.style.color = "white";
     LanguageChange()
-});
+};
 
-SpanishLanguageButton.addEventListener("click", function () {
+function SpanishLanguageChange() {
     SetLanguage("Spanish");
     EnglishLanguageButton.style.color = "white";
     SpanishLanguageButton.style.color = "rgb(220, 20, 60)";
     LanguageChange()
-});
+};
+
+EnglishLanguageButton.addEventListener("click", EnglishLanguageChange);
+
+SpanishLanguageButton.addEventListener("click", SpanishLanguageChange);
 
 let SignInButton = document.getElementById("SignInButton");
 let FooterInfo = document.getElementById("FooterInfo");
@@ -158,4 +157,17 @@ function LanguageChange() {
         }
 
     }
+};
+
+// Set default language
+if (localStorage.getItem("Language")) {
+    if (localStorage.getItem("Language") === "English") {
+        EnglishLanguageChange();
+    } else if (localStorage.getItem("Language") === "Spanish") {
+        SpanishLanguageChange();
+    }
+} else {
+    SetLanguage("English")
+    EnglishLanguageButton.style.color = "rgb(220, 20, 60)";
+    SpanishLanguageButton.style.color = "white";
 };
