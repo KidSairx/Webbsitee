@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             const newsContainer = document.querySelector(".NewsListTable"); // Select the container
 
-            data.reverse(); // Reverse the order of the articles
-
             data.forEach(article => {
                 // Create article element
                 const articleElement = document.createElement("div");
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="ArticlePage.html?id=${article.CustomArticleId}" class="NewsTitle">${article.headline}</a>
                         <p class="NewsDescription">${article.description}</p>
                         <p class="NewsCategoryType">${article.CustomArticleCategory}</p>
-                        <p class="NewsId">${article.CustomArticleId}</p>
                     </div>
                 `;
                 };

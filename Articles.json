@@ -3,10 +3,10 @@
         "@context": "https://schema.org",
         "@type": "SatiricalArticle",
         "@id": "LATERurl",
-        "headline": "Donald Trump renames the gulf of America to the gulf of Trump",
-        "headlineSpanish": "Donald Trump renombra el golfo de América como el golfo de Trump",
-        "description": "After the initial renaming of gulf of Mexico to gulf of America, Donald Trump has decided to sign another executive order to rename it to the gulf of Trump.",
-        "descriptionSpanish": "Después del cambio de nombre inicial del Golfo de México a Golfo de América, Donald Trump decidió firmar otra orden ejecutiva para cambiarle el nombre a Golfo de Trump.",
+        "headline": "Third Article",
+        "headlineSpanish": "Tercer Artículo",
+        "description": "third description",
+        "descriptionSpanish": "Tercera descripción",
         "author": {
             "@type": "Person",
             "name": "Sairx"
@@ -22,34 +22,34 @@
             "@id": "null"
         },
         "image": [
-            "images/art1.1.jpg",
-            "images/art1.2.jpg",
-            "images/art1.3.jpg",
+            "",
+            "",
+            "",
             ""
         ],
         "ArticleHeadline": [
-            "Renaming",
-            "",
-            ""
+            "3",
+            "3",
+            "3"
         ],
         "ArticleHeadlineSpanish": [
-            "Renombramiento",
-            "",
-            ""
+            "3",
+            "3",
+            "3"
         ],
         "ArticleBody": [
-            "The news about Trump renaming the gulf of Mexico flew all over the world recently but now Trump is preparing another executive order where he claims to be renaming it once again.",
-            "The gulf of Trump will be the new name of the gulf of Mexico. Trump claims that this will be a great way to honor himself and his family. He also claims that this will be a great way to show the world that he is the best president ever.",
-            "The renaming of the gulf of Mexico to the gulf of America was met with mixed reactions from the public. Some people were happy about it while others were not so happy. But now, with the renaming of the gulf of Trump, it seems that the public is even more divided."
+            "3",
+            "3",
+            "3"
         ],
         "ArticleBodySpanish": [
-            "La noticia sobre Trump cambiando el nombre del Golfo de México voló por todo el mundo recientemente, pero ahora Trump está preparando otra orden ejecutiva donde afirma que lo cambiará una vez más.",
-            "El golfo de Trump será el nuevo nombre del golfo de México. Trump afirma que esta será una gran manera de honrarse a sí mismo y a su familia. También afirma que esta será una gran manera de mostrar al mundo que él es el mejor presidente de todos los tiempos.",
-            "El cambio de nombre del golfo de México al golfo de América fue recibido con reacciones mixtas por parte del público. Algunas personas estaban felices al respecto, mientras que otras no lo estaban tanto. Pero ahora, con el cambio de nombre del golfo de Trump, parece que el público está aún más dividido."
+            "3",
+            "3",
+            "3"
         ],
-        "CustomArticleId": "1",
-        "CustomArticleCategory": "World",
-        "CustomArticleCategorySpanish": "Mundo"
+        "CustomArticleId": "3",
+        "CustomArticleCategory": "Social Media",
+        "CustomArticleCategorySpanish": "Redes Sociales"
     },
     {
         "@context": "https://schema.org",
@@ -107,10 +107,10 @@
         "@context": "https://schema.org",
         "@type": "SatiricalArticle",
         "@id": "LATERurl",
-        "headline": "Third Article",
-        "headlineSpanish": "Tercer Artículo",
-        "description": "third description",
-        "descriptionSpanish": "Tercera descripción",
+        "headline": "Donald Trump renames the gulf of America to the gulf of Trump",
+        "headlineSpanish": "Donald Trump renombra el golfo de América como el golfo de Trump",
+        "description": "After the initial renaming of gulf of Mexico to gulf of America, Donald Trump has decided to sign another executive order to rename it to the gulf of Trump.",
+        "descriptionSpanish": "Después del cambio de nombre inicial del Golfo de México a Golfo de América, Donald Trump decidió firmar otra orden ejecutiva para cambiarle el nombre a Golfo de Trump.",
         "author": {
             "@type": "Person",
             "name": "Sairx"
@@ -126,33 +126,33 @@
             "@id": "null"
         },
         "image": [
-            "",
-            "",
-            "",
+            "images/art1.1.jpg",
+            "images/art1.2.jpg",
+            "images/art1.3.jpg",
             ""
         ],
         "ArticleHeadline": [
-            "3",
-            "3",
-            "3"
+            "Renaming",
+            "",
+            ""
         ],
         "ArticleHeadlineSpanish": [
-            "3",
-            "3",
-            "3"
+            "Renombramiento",
+            "",
+            ""
         ],
         "ArticleBody": [
-            "3",
-            "3",
-            "3"
+            "The news about Trump renaming the gulf of Mexico flew all over the world recently but now Trump is preparing another executive order where he claims to be renaming it once again.",
+            "The gulf of Trump will be the new name of the gulf of Mexico. Trump claims that this will be a great way to honor himself and his family. He also claims that this will be a great way to show the world that he is the best president ever.",
+            "The renaming of the gulf of Mexico to the gulf of America was met with mixed reactions from the public. Some people were happy about it while others were not so happy. But now, with the renaming of the gulf of Trump, it seems that the public is even more divided."
         ],
         "ArticleBodySpanish": [
-            "3",
-            "3",
-            "3"
+            "La noticia sobre Trump cambiando el nombre del Golfo de México voló por todo el mundo recientemente, pero ahora Trump está preparando otra orden ejecutiva donde afirma que lo cambiará una vez más.",
+            "El golfo de Trump será el nuevo nombre del golfo de México. Trump afirma que esta será una gran manera de honrarse a sí mismo y a su familia. También afirma que esta será una gran manera de mostrar al mundo que él es el mejor presidente de todos los tiempos.",
+            "El cambio de nombre del golfo de México al golfo de América fue recibido con reacciones mixtas por parte del público. Algunas personas estaban felices al respecto, mientras que otras no lo estaban tanto. Pero ahora, con el cambio de nombre del golfo de Trump, parece que el público está aún más dividido."
         ],
-        "CustomArticleId": "3",
-        "CustomArticleCategory": "Social Media",
-        "CustomArticleCategorySpanish": "Redes Sociales"
+        "CustomArticleId": "1",
+        "CustomArticleCategory": "World",
+        "CustomArticleCategorySpanish": "Mundo"
     }
 ]
