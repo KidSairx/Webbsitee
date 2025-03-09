@@ -224,15 +224,44 @@ function saveJson() {
     // Convert JSON object to string
     let jsonString = JSON.stringify(articleData, null, 2);
 
-    // Create a Blob (binary large object) with JSON data
-    const blob = new Blob([jsonString], { type: "application/json" });
+    // Create a new JSZip instance
+    let zip = new JSZip();
 
-    // Create a temporary download link
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `article.json`; // Set the file name
-    document.body.appendChild(a);
-    a.click(); // Trigger the download
-    document.body.removeChild(a); // Remove the anchor element
+    // Add JSON file to the ZIP
+    zip.file("article.json", jsonString);
 
+    // Add images to the ZIP
+    addImageToZip(zip, MainImage, NewsArticleMainImage.src);
+    addImageToZip(zip, Image1, NewsArticleImage1.src);
+    addImageToZip(zip, Image2, NewsArticleImage2.src);
+    addImageToZip(zip, Image3, NewsArticleImage3.src);
+
+    // Generate the ZIP file and trigger the download
+    zip.generateAsync({ type: "blob" }).then(function (content) {
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(content);
+        a.download = `article.zip`; // Set the file name
+        document.body.appendChild(a);
+        a.click(); // Trigger the download
+        document.body.removeChild(a); // Remove the anchor element
+    });
+}
+
+function addImageToZip(zip, path, dataUrl) {
+    if (dataUrl.startsWith("data:image/")) {
+        // Convert data URL to Blob
+        const byteString = atob(dataUrl.split(',')[1]);
+        const mimeString = dataUrl.split(',')[0].split(':')[1].split(';')[0];
+        const ab = new ArrayBuffer(byteString.length);
+        const ia = new Uint8Array(ab);
+        for (let i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+        }
+        const blob = new Blob([ab], { type: mimeString });
+
+        // Add Blob to ZIP
+        zip.file(path, blob);
+    } else {
+        console.error("Invalid data URL:", dataUrl);
+    }
 }
