@@ -152,20 +152,14 @@ function LanguageChange() {
 
                 })
                 .then(data => {
-                    console.log("FirstCheck");
                     let LoadedArticles = document.querySelectorAll(".NewsContainer");
-                    console.log("SecondCheck");
                     console.log(LoadedArticles);
                     LoadedArticles.forEach(article => {
-                        console.log("ThirdCheck");
                         let CurrentArticle = data.find(articleData => articleData.CustomArticleId === article.dataset.id);
-                        console.log("FourthCheck");
                         if (CurrentArticle) {
-                            console.log("FifthCheck");
                             article.querySelector(".NewsTitle").innerHTML = CurrentArticle.headlineSpanish;
                             article.querySelector(".NewsDescription").innerHTML = CurrentArticle.descriptionSpanish;
                             article.querySelector(".NewsCategoryType").innerHTML = CurrentArticle.CustomArticleCategorySpanish;
-                            console.log("SUCCESS");
                         } else {
                             console.error("Article not found");
                         }

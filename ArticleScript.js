@@ -20,7 +20,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 const articleImage = article.image[0] ? article.image[0] : "images/Placeholder.png";
 
                 // Set inner HTML for article
-                articleElement.innerHTML = `
+                let Language = localStorage.getItem("Language");
+                if (Language === "Spanish") {
+                    articleElement.innerHTML = `
+                    <div class="NewsArticleContainer">
+                        <a href="ArticlePage.html?id=${article.CustomArticleId}">
+                            <img src="${articleImage}" alt="News Article Image" class="NewsArticleImage">
+                        </a>
+                        <a href="ArticlePage.html?id=${article.CustomArticleId}" class="NewsTitle">${article.headlineSpanish}</a>
+                        <p class="NewsDescription">${article.descriptionSpanish}</p>
+                        <p class="NewsCategoryType">${article.CustomArticleCategorySpanish}</p>
+                        <p class="NewsId">${article.CustomArticleId}</p>
+                    </div>
+                `;
+                } else {
+                    //if not spanish then set English(so it's either English is set or nothing is set)
+                    articleElement.innerHTML = `
                     <div class="NewsArticleContainer">
                         <a href="ArticlePage.html?id=${article.CustomArticleId}">
                             <img src="${articleImage}" alt="News Article Image" class="NewsArticleImage">
@@ -31,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="NewsId">${article.CustomArticleId}</p>
                     </div>
                 `;
+                };
+
 
                 // Append to container
                 newsContainer.appendChild(articleElement);
