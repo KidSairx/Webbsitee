@@ -62,6 +62,31 @@ function LanguageChange() {
             TechnologyCategoryButton.innerHTML = "| Technology |";
             WorldCategoryButton.innerHTML = "| World |";
             AnimeAndMangaCategoryButton.innerHTML = "|Anime and Manga |";
+
+            //fetching articles to change language inside of acticles' list
+            fetch("Articles.json")
+                .then(response => {
+                    if (response.ok) {
+                        return response.json(); // Return the parsed JSON data
+                    } else {
+                        console.log("ERROR while changing Language to English");
+                        throw new Error("Failed to fetch Articles.json");
+                    }
+                })
+                .then(data => {
+                    let LoadedArticles = document.querySelectorAll(".NewsContainer");
+                    LoadedArticles.forEach(article => {
+                        let CurrentArticle = data.find(articleData => articleData.CustomArticleId === article.dataset.id);
+                        if (CurrentArticle) {
+                            article.querySelector(".NewsTitle").innerHTML = CurrentArticle.headline;
+                            article.querySelector(".NewsDescription").innerHTML = CurrentArticle.description;
+                            article.querySelector(".NewsCategoryType").innerHTML = CurrentArticle.CustomArticleCategory;
+                        } else {
+                            console.error("Article not found");
+                        }
+                    });
+
+                })
         }
 
         if (BackToMainPageButton) {
@@ -76,7 +101,6 @@ function LanguageChange() {
             fetch("Articles.json")
                 .then(response => {
                     if (response.ok) {
-                        console.log("Language changed to English on Article Successfully");
                         return response.json(); // Return the parsed JSON data
                     } else {
                         console.log("ERROR while changing Language to English");
@@ -115,6 +139,39 @@ function LanguageChange() {
             TechnologyCategoryButton.innerHTML = "| Technología |";
             WorldCategoryButton.innerHTML = "| Mundo |";
             AnimeAndMangaCategoryButton.innerHTML = "| Anime y Manga |";
+
+            //fetching articles to change language inside of acticles' list
+            fetch("Articles.json")
+                .then(response => {
+                    if (response.ok) {
+                        return response.json(); // Return the parsed JSON data
+                    } else {
+                        console.log("ERROR while changing Language to Spanish");
+                        throw new Error("Failed to fetch Articles.json");
+                    }
+
+                })
+                .then(data => {
+                    console.log("FirstCheck");
+                    let LoadedArticles = document.querySelectorAll(".NewsContainer");
+                    console.log("SecondCheck");
+                    console.log(LoadedArticles);
+                    LoadedArticles.forEach(article => {
+                        console.log("ThirdCheck");
+                        let CurrentArticle = data.find(articleData => articleData.CustomArticleId === article.dataset.id);
+                        console.log("FourthCheck");
+                        if (CurrentArticle) {
+                            console.log("FifthCheck");
+                            article.querySelector(".NewsTitle").innerHTML = CurrentArticle.headlineSpanish;
+                            article.querySelector(".NewsDescription").innerHTML = CurrentArticle.descriptionSpanish;
+                            article.querySelector(".NewsCategoryType").innerHTML = CurrentArticle.CustomArticleCategorySpanish;
+                            console.log("SUCCESS");
+                        } else {
+                            console.error("Article not found");
+                        }
+                    });
+
+                })
         }
 
         if (BackToMainPageButton) {
@@ -125,11 +182,10 @@ function LanguageChange() {
             ArticlePublishedDateText.innerHTML = "Fecha de Publicación: ";
             ArticleLastModifiedDateText.innerHTML = "Fecha de Última Modificación: ";
             ArticleIdText.innerHTML = "ID del Artículo: ";
-
+            //fetching articles to change language inside of an article
             fetch("Articles.json")
                 .then(response => {
                     if (response.ok) {
-                        console.log("Language changed to Spanish on Article Successfully");
                         return response.json(); // Return the parsed JSON data
                     } else {
                         console.log("ERROR while changing Language to Spanish");
@@ -156,8 +212,11 @@ function LanguageChange() {
                 })
         }
 
+
+
     }
 };
+
 
 // Set default language
 if (localStorage.getItem("Language")) {

@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const articleElement = document.createElement("div");
                 articleElement.classList.add("NewsContainer");
                 articleElement.dataset.category = article.CustomArticleCategory; // Set category for filtering
+                articleElement.dataset.id = article.CustomArticleId; // Set id for language change
 
 
                 const articleImage = article.image[0] ? article.image[0] : "images/Placeholder.png";
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="ArticlePage.html?id=${article.CustomArticleId}" class="NewsTitle">${article.headline}</a>
                         <p class="NewsDescription">${article.description}</p>
                         <p class="NewsCategoryType">${article.CustomArticleCategory}</p>
+                        <p class="NewsId">${article.CustomArticleId}</p>
                     </div>
                 `;
 
